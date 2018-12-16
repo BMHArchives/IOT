@@ -27,7 +27,10 @@ print("Define pins")
 pirPin   = board.get_pin('d:7:i')
 redPin   = 12
 greenPin = 13
+print("pirPin: {}".format(pirPin))
 print("Completed")
+blinkLED(redPin, "Motion Detected")
+blinkLED(greenPin, "No motion Detected")
 # Check for PIR sensor input
 print("Enter loop")
 while True:
